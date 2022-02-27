@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levantar pedido</title>
+</head>
+<body>
+    <h1>Aquí se hace el pedido</h1>
+
+    <form action="pedido.js">
+        <label for="Nombre">Danos tu Nombre</label>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre"><br>
+        <label for="Teléfono">Danos tu Teléfono</label>
+        <input type="tel" id="Teléfono" name="Teléfono" placeholder="Teléfono"><br>
+        <label for="Correo">Danos tu Correo</label>
+        <input type="email" id="Correo" name="Correo" placeholder="Correo"><br>
+
+        <p>Tamaños</p>
+        <input type="radio" id="Chico" name="Chico" value="Chico">
+        <label for="Chico">Chico</label><br>
+        <input type="radio" id="Mediano" name="Mediano" value="Mediano">
+        <label for="Mediano">Mediano</label><br>
+        <input type="radio" id="Grande" name="Grande" value="Grande">
+        <label for="Grande">Grande</label><br>
+        <input type="radio" id="Media plancha" name="Media plancha" value="Media plancha">
+        <label for="Media plancha">Media plancha</label><br>
+        <input type="radio" id="Plancha completa" name="Plancha completa" value="Plancha completa">
+        <label for="Plancha completa">Plancha completa</label><br>
+
+        <p>¿De qué sabor?</p>
+        <input type="checkbox" name="Chocolate" id="Chocolate" value="Chocolate">
+        <label for="Chocolate">Sabor Chocolate</label><br>
+        <input type="checkbox" name="Vainilla" id="Vainilla" value="Vainilla">
+        <label for="Vainilla">Sabor Vainilla</label><br>
+        <input type="checkbox" name="Fresa" id="Fresa" value="Fresa">
+        <label for="Fresa">Sabor Fresa</label><br>
+        <input type="checkbox" name="Moka" id="Moka" value="Moka">
+        <label for="Moka">Sabor Moka</label><br>
+
+        <p>Topping</p>
+        <input type="checkbox" name="1" id="1" value="1">
+        <label for="1">Coco</label><br>
+        <input type="checkbox" name="2" id="2" value="2">
+        <label for="2">Nuez</label><br>
+        <input type="checkbox" name="3" id="3" value="3">
+        <label for="3">Fruta</label><br>
+        <input type="checkbox" name="4" id="4" value="4">
+        <label for="4">Chispas de chocolate</label><br>
+        <input type="checkbox" name="5" id="5" value="5">
+        <label for="5">Almendras</label><br>
+
+        <p>¿Prefieres paquete?</p>
+        <select name="Paquete" id="Paquete">
+             <option value="Paquete 1">Chico con 1 topping</option>
+             <option value="Paquete 2">Mediano con 2 topping</option>
+             <option value="Paquete 3">Grande con 3 topping</option>
+             <option value="Paquete Fiesta">Media plancha con 4 topping</option>
+             <option value="Paquete animes">Plancha completa con 5 topping</option>
+             <option value="No quiero paquete">No quiero paquete</option>
+        </select>
+
+        <p>¿Cuál fecha prefieres?</p>
+        <label for="fecha1">Elegir la fecha y la hora</label><br>
+        <input type="datetime-local" name="fecha1" id="fecha1"><br>
+
+        <br><br>
+    <input type="button" id="pago" name="pago" value="Pago" onclick="alert('Solo aceptamos pago en efectivo contra entrega');"><br><br>
+    <input type="reset">
+    <br><br>    
+    </form>
+    <a href="./Pastelero.html">
+        <input type="submit" value="Enviar">
+        </a>
+    <br><br>
+</body>

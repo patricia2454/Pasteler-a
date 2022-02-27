@@ -1,0 +1,19 @@
+.page-header {
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    z-index: 10;
+  }
+   
+  .page-header .logo {
+    font-size: 1.7rem;
+  }
+   
+  .page-header li:not(:last-child) {
+    margin-right: 20px;
+  }
+   
+  .page-header a {
+    font-size: 1.1rem;
+  }
